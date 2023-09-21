@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HeaderView: View {
-    @Binding var tasks: Task
+    @Binding var tasks: [Task]
     @State var store: String
     
     var body: some View {
@@ -16,7 +16,7 @@ struct HeaderView: View {
             TextField("Enter Text", text: $store)
             
             Button("Add") {
-                tasks.nameOfTask.append(store)
+                tasks.append(store)
 
             } 
         }
