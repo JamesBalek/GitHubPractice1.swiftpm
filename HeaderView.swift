@@ -14,11 +14,14 @@ struct HeaderView: View {
     var body: some View {
         HStack{
             TextField("Enter Text", text: $store)
+                .textFieldStyle(.roundedBorder)
+                .padding()
             
             Button("Add") {
                 tasks.nameOfTask.append(store)
 
-            } 
+            }
+            .padding()
         }
     }
 }
