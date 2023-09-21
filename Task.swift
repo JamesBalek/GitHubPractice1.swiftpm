@@ -8,6 +8,6 @@
 import SwiftUI
 
 struct Task: Hashable {
-    @State var nameOfTask: String
+    var nameOfTask: String
 }
 
